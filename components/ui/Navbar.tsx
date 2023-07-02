@@ -1,62 +1,61 @@
-import NextLink from 'next/link';
+import NextLink from "next/link";
+import Logo from "../../images/Logo.png";
+import styles from "../../styles/navbar.module.scss";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
-import { AppBar, Badge, Box, Button, IconButton, Link, Toolbar, Typography } from '@mui/material';
-import { SearchOutlined, ShoppingCartOutlined } from '@mui/icons-material';
+import { AppBar, Box, Button, Link, Toolbar, Typography } from "@mui/material";
 
 export const Navbar = () => {
   return (
-    <AppBar>
-        <Toolbar>
-            <NextLink href='/' passHref>
-                <Link display='flex' alignItems='center'>
-                    <Typography variant='h6'>Teslo |</Typography>
-                    <Typography sx={{ ml: 0.5 }}>Shop</Typography>
-                </Link>  
-            </NextLink>
+    <AppBar className={styles["app-bar"]}>
+      <Toolbar>
+        <NextLink href="/" passHref>
+          <Link display="flex" alignItems="center">
+            <img src={Logo.src} className={styles["img-logo"]} />
+          </Link>
+        </NextLink>
 
-            <Box flex={ 1 } />
+        <Box flex={1} />
 
-            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                <NextLink href='/category/men' passHref>
-                    <Link>
-                        <Button>Hombres</Button>
-                    </Link>
-                </NextLink>
-                <NextLink href='/category/women' passHref>
-                    <Link>
-                        <Button>Mujeres</Button>
-                    </Link>
-                </NextLink>
-                <NextLink href='/category/kid' passHref>
-                    <Link>
-                        <Button>Niños</Button>
-                    </Link>
-                </NextLink>
-            </Box>
+        <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <NextLink href="/category/men" passHref>
+            <Link>
+              <Button>Registro</Button>
+            </Link>
+          </NextLink>
+          <NextLink href="/category/women" passHref>
+            <Link>
+              <Button>Acerca</Button>
+            </Link>
+          </NextLink>
+          <NextLink href="/category/kid" passHref>
+            <Link>
+              <Button>Servicios</Button>
+            </Link>
+          </NextLink>
+          <NextLink href="/category/kid" passHref>
+            <Link>
+              <Button>Dudas</Button>
+            </Link>
+          </NextLink>
+          <NextLink href="/category/kid" passHref>
+            <Link>
+              <Button>Contacto</Button>
+            </Link>
+          </NextLink>
+        </Box>
 
+        <Box flex={1} />
 
-            <Box flex={ 1 } />
+        <NextLink href="/cart" passHref>
+          <Link className={styles["enlace-telefono"]}>
+            <LocalPhoneIcon />
+            <Typography>373 735 6060</Typography>
+          </Link>
+        </NextLink>
 
-            <IconButton>
-                <SearchOutlined />
-            </IconButton>
-
-            <NextLink href="/cart" passHref>
-                <Link>
-                    <IconButton>
-                        <Badge badgeContent={ 2 } color="secondary">
-                            <ShoppingCartOutlined />
-                        </Badge>
-                    </IconButton>
-                </Link>
-            </NextLink>
-
-
-            <Button>
-                Menú
-            </Button>
-
-        </Toolbar>
+        <Button>Menú</Button>
+      </Toolbar>
     </AppBar>
-  )
-}
+  );
+};

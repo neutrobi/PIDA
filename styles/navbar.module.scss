@@ -1,0 +1,17 @@
+.app-bar {
+  button {
+    font-size: 14px;
+  }
+  .img-logo {
+    width: 150px;
+  }
+
+  .enlace-telefono {
+    display: flex;
+    align-items: center;
+
+    p {
+      padding-left: 10px;
+    }
+  }
+}

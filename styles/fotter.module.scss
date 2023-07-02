@@ -1,0 +1,34 @@
+.contenedor-fotter {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 96px 20px 96px;
+  background-color: #9a33e4;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  a {
+    color: #fff;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+.derechos-reservados {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 96px 10px 96px;
+  background-color: #9a33e4;
+  p {
+    color: #fff;
+  }
+  .siguenos {
+    display: flex;
+    p {
+      margin-right: 20px;
+    }
+    svg {
+      color: #fff;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+}

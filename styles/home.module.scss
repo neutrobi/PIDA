@@ -1,0 +1,20 @@
+.info-pulsera {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  .titulo-pulsera {
+    font-size: 48px;
+  }
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: #c394e5;
+  padding: 50px 15px 50px 15px;
+}
