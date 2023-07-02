@@ -2,7 +2,7 @@ import NextLink from "next/link";
 import Logo from "../../images/Logo.png";
 import styles from "../../styles/navbar.module.scss";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-
+import Image from "next/image";
 import { AppBar, Box, Button, Link, Toolbar, Typography } from "@mui/material";
 
 export const Navbar = () => {
@@ -11,7 +11,11 @@ export const Navbar = () => {
       <Toolbar>
         <NextLink href="/" passHref>
           <Link display="flex" alignItems="center">
-            <img src={Logo.src} className={styles["img-logo"]} />
+            <Image
+              src={Logo.src}
+              className={styles["img-logo"]}
+              alt="Logotipo de P.I.D.A"
+            />
           </Link>
         </NextLink>
 

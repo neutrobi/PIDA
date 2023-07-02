@@ -12,6 +12,7 @@ import Care from "../images/Care.jpg";
 import Servicio from "../images/Servicio.jpeg";
 import Seguridad from "../images/Seguridad.jpg";
 import FacilUsar from "../images/FacilUsar.jpg";
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
           padecimiento de Alzheimer
         </Typography>
         <div style={{ textAlign: "center" }}>
-          <img src={Pulsera.src}></img>
+          <Image src={Pulsera.src} alt="Imagen prototipo de pulsera" />
         </div>
       </div>
       <div className={styles.tarjetas}>
