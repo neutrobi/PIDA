@@ -11,7 +11,7 @@ export const Navbar = () => {
       <Toolbar>
         <NextLink href="/" passHref>
           <Link display="flex" alignItems="center">
-            <Image
+            <img
               src={Logo.src}
               className={styles["img-logo"]}
               alt="Logotipo de P.I.D.A"

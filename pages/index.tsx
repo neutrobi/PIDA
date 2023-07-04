@@ -32,7 +32,7 @@ const Home: NextPage = () => {
           padecimiento de Alzheimer
         </Typography>
         <div style={{ textAlign: "center" }}>
-          <Image src={Pulsera.src} alt="Imagen prototipo de pulsera" />
+          <img src={Pulsera.src} alt="Imagen prototipo de pulsera" />
         </div>
       </div>
       <div className={styles.tarjetas}>
