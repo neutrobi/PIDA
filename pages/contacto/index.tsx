@@ -8,7 +8,7 @@ const Contacto = () => {
         "Registro para dejar datos del contacto y del paciente"
       }
     >
-        <div>Hola</div>
+        <div>Hola esta es unkjhdfkjdsa </div>
     </PidaLayout>
     
   )
