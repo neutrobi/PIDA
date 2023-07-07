@@ -9,7 +9,7 @@ interface Props {
   imageFullUrl?: string;
 }
 
-export const ShopLayout: FC<Props> = ({
+export const PidaLayout: FC<Props> = ({
   children,
   title,
   pageDescription,

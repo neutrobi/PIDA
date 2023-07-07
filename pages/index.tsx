@@ -5,7 +5,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-import { ShopLayout } from "../components/layouts";
+import { PidaLayout } from "../components/layouts";
 import styles from "../styles/home.module.scss";
 import Pulsera from "../images/Pulsera.jpeg";
 import Care from "../images/Care.jpg";
@@ -16,7 +16,7 @@ import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
-    <ShopLayout
+    <PidaLayout
       title={"Pida - Home"}
       pageDescription={
         "Pulsera inteligente diseñada para la localización de personas con padecimiento de Alzheimer"
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
           </CardActions>
         </Card>
       </div>
-    </ShopLayout>
+    </PidaLayout>
   );
 };
 
