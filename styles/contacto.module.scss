@@ -1,0 +1,13 @@
+.contenedor-formularios{
+    margin: auto;
+    max-width: 1200px;
+    padding: 30px;
+    .fecha-error{
+        fieldset{
+            border-color: #d32f2f !important;
+        }
+        label{
+            color: #d32f2f;
+        }
+    }
+}
