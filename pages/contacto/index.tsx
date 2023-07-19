@@ -9,6 +9,8 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import {es} from 'date-fns/locale'
 import Divider from '@mui/material/Divider';
 import Snackbar, { SnackbarOrigin } from '@mui/material/Snackbar';
+import SendIcon from '@mui/icons-material/Send';
+import Stack from '@mui/material/Stack';
 import { ContactoService } from '../../services';
 
 interface State extends SnackbarOrigin {
@@ -410,8 +412,16 @@ const Contacto = () => {
                         error={telefonoAlternoError}
                     />
                   </Grid>
-                  <Grid item xs={12}>
-                     <Button variant="outlined" color="secondary" type="submit">Enviar información</Button>
+                  <Grid item xs={12} style={{textAlign:'right'}}>
+                    <Button 
+                      variant="outlined" 
+                      color="secondary"  
+                      type="submit" 
+                      endIcon={<SendIcon />} 
+                      style={{borderRadius:'3px', height:'37px'}}
+                    >
+                      Enviar información
+                    </Button>
                     <Snackbar
                       anchorOrigin={{ vertical, horizontal }}
                       open={open}
